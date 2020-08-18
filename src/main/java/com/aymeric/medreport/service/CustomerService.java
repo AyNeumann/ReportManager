@@ -32,6 +32,11 @@ public class CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
     
+    /**
+     * Get a customer by Id
+     * @param id id of the customer to get
+     * @return the found customer or ??
+     */
     public Customer getCustomerById(final Long id) {
         Optional<Customer> customer = customerRepository.findById(id);
         

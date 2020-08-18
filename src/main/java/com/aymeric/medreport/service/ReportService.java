@@ -24,7 +24,12 @@ public class ReportService {
     /** Reference to the report repository */
     @Autowired
     ReportRepository reportRepository;
-
+    
+    /**
+     * Get a report by Id
+     * @param id id id of the report to get
+     * @return the found report or ??
+     */
     public Report getReportById(final long id) {
         Optional<Report> report = reportRepository.findById(id);
         

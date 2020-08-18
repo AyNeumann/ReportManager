@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.aymeric.medreport.model.Report;
 import com.aymeric.medreport.service.ReportService;
 
+import io.swagger.annotations.ApiOperation;
+
 /**
  * Report Controller manage request about reports
  * @author Aymeric NEUMANN
@@ -27,7 +29,13 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
     
+    /**
+     * Get a report by Id
+     * @param id id of the report to get
+     * @return the found report or ??
+     */
     @GetMapping("/{id}")
+    @ApiOperation(value = "Get report by Id", notes = "Getting a report by his id", response = Report.class)
     public Report getById(@RequestParam(name = "id") final Long id) {
         logger.debug("Getting report with the id: {}", id);
         return reportService.getReportById(id);
