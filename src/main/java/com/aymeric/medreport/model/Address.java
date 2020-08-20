@@ -1,5 +1,6 @@
 package com.aymeric.medreport.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -23,8 +24,13 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
  *
  */
 @Entity
-public class Address {
+public class Address implements Serializable {
     
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = -8510767308006615873L;
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;

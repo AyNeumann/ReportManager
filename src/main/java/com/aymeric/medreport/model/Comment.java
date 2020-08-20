@@ -1,5 +1,6 @@
 package com.aymeric.medreport.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -18,8 +19,13 @@ import org.hibernate.annotations.Type;
  *
  */
 @Entity
-public class Comment {
+public class Comment implements Serializable {
     
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = 8653437506466912925L;
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;

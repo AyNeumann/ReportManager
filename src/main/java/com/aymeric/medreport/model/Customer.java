@@ -1,5 +1,6 @@
 package com.aymeric.medreport.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -14,14 +15,24 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 /**
  * Customer entity class
  * @author Aymeric NEUMANN
  *
  */
 @Entity
-public class Customer {
+public class Customer implements Serializable {
     
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = 4504003902682243787L;
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long customerNumber;
@@ -38,9 +49,11 @@ public class Customer {
     private Date dateOfBirth;
     
     @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Address> address;
     
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Report> reports;
     
     /**

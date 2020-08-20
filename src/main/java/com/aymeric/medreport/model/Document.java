@@ -1,5 +1,6 @@
 package com.aymeric.medreport.model;
 
+import java.io.Serializable;
 import java.net.URL;
 
 import javax.persistence.Entity;
@@ -14,7 +15,12 @@ import javax.validation.constraints.NotNull;
  *
  */
 @Entity
-public class Document {
+public class Document implements Serializable {
+
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = 6337017541382168795L;
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

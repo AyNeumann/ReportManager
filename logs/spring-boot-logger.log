@@ -1,145 +1,237 @@
-2020-08-18 11:19:08,317 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1136 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 11:19:08,317 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 11:19:08,317 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 11:19:10,140 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.038 seconds (JVM running for 2.647)
-2020-08-18 11:27:24,322 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12368 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 11:27:24,322 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 11:27:24,322 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 11:27:26,172 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.053 seconds (JVM running for 2.694)
-2020-08-18 11:36:16,661 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 14308 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 11:36:16,661 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 11:36:16,661 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 11:36:18,722 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.269 seconds (JVM running for 4.948)
-2020-08-18 11:38:47,431 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1968 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 11:38:47,436 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 11:38:47,436 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 11:38:49,262 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.033 seconds (JVM running for 2.64)
-2020-08-18 13:02:56,459 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12708 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:02:56,459 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:02:56,459 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:05:40,385 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10816 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:05:40,385 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:05:40,385 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:06:12,971 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2580 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:06:12,971 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:06:12,971 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:06:14,798 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.042 seconds (JVM running for 2.641)
-2020-08-18 13:08:42,694 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8128 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:08:42,694 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:08:42,694 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:09:42,800 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 6748 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:09:42,800 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:09:42,800 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:10:11,620 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 15352 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:10:11,620 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:10:11,620 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:17:35,828 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 11064 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:17:35,832 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:17:35,832 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:26:42,402 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8440 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:26:42,402 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:26:42,402 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:27:06,733 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13120 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:27:06,733 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:27:06,733 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:27:08,598 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.073 seconds (JVM running for 2.678)
-2020-08-18 13:29:49,447 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1132 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:29:49,447 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:29:49,447 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:29:51,307 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.07 seconds (JVM running for 2.673)
-2020-08-18 13:32:18,401 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 7788 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:32:18,401 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:32:18,401 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:34:15,813 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8904 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:34:15,813 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:34:15,813 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:34:58,231 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 7088 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:34:58,241 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:34:58,241 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 13:35:41,921 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 916 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 13:35:41,921 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 13:35:41,921 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:00:22,764 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9732 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:00:22,765 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:00:22,766 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:00:49,611 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12736 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:00:49,612 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:00:49,612 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:00:51,495 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.099 seconds (JVM running for 2.722)
-2020-08-18 14:10:17,904 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1640 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:10:17,905 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:10:17,905 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:14:09,071 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 4836 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:14:09,071 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:14:09,072 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:23:24,952 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2060 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:23:24,952 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:23:24,953 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:31:55,267 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 11356 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:31:55,268 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:31:55,268 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:33:01,347 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 4764 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:33:01,348 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:33:01,349 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:34:20,221 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 224 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:34:20,222 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:34:20,223 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:36:30,374 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 7716 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:36:30,375 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:36:30,375 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:36:32,774 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.616 seconds (JVM running for 3.237)
-2020-08-18 14:39:39,658 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13556 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:39:39,659 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:39:39,660 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:50:02,013 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2188 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:50:02,013 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:50:02,013 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:51:30,875 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9624 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:51:30,875 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:51:30,875 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:51:33,195 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.532 seconds (JVM running for 3.135)
-2020-08-18 14:53:20,450 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8268 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 14:53:20,450 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 14:53:20,450 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 14:53:22,965 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.727 seconds (JVM running for 3.33)
-2020-08-18 15:08:22,879 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 4608 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:08:22,879 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:08:22,879 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:08:25,399 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.733 seconds (JVM running for 3.345)
-2020-08-18 15:22:24,917 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 4584 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:22:24,917 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:22:24,917 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:22:27,447 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.733 seconds (JVM running for 3.337)
-2020-08-18 15:26:43,557 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 5384 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:26:43,557 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:26:43,557 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:26:46,097 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.751 seconds (JVM running for 3.359)
-2020-08-18 15:28:39,885 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13128 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:28:39,885 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:28:39,885 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:28:42,455 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.774 seconds (JVM running for 3.376)
-2020-08-18 15:32:15,343 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 6964 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:32:15,343 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:32:15,353 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:32:17,952 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.807 seconds (JVM running for 3.418)
-2020-08-18 15:37:39,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 6832 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:37:39,290 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:37:39,290 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:37:41,890 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.81 seconds (JVM running for 3.412)
-2020-08-18 15:41:29,944 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2800 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 15:41:29,944 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 15:41:29,944 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 15:41:32,574 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.835 seconds (JVM running for 3.447)
-2020-08-18 16:29:30,773 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10012 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 16:29:30,773 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 16:29:30,773 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 16:29:30,773 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9796 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 16:29:30,773 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 16:29:30,773 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 16:32:01,635 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12952 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 16:32:01,635 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 16:32:01,635 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 16:33:00,211 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 11772 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
-2020-08-18 16:33:00,211 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-08-18 16:33:00,211 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-08-18 16:33:02,817 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.818 seconds (JVM running for 3.422)
+2020-08-20 08:50:55,395 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13680 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 08:50:55,397 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 08:50:55,398 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 08:50:58,343 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.18 seconds (JVM running for 3.865)
+2020-08-20 08:52:23,800 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Saving the customer: Customer [customerNumber=null, lastName=Travail, firstName=Stephane, dateOfBirth=Mon Oct 01 09:45:00 CEST 2012, address=[com.aymeric.medreport.model.Address@420b8adb], reports=null]
+2020-08-20 08:52:37,026 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-4] Getting customer with the id: 1
+2020-08-20 08:52:37,057 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-4] Optional[Customer [customerNumber=1, lastName=Travail, firstName=Stephane, dateOfBirth=2012-10-01 09:45:00.0, address=[com.aymeric.medreport.model.Address@1450ae8c], reports=[]]]
+2020-08-20 08:56:34,038 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-10] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Travail_Stephane_2020-08-19, domain=DAMAGE, status=PENDING, comment=[Comment [id=null, modificationDate=null, creationDate=Wed Aug 19 11:45:00 CEST 2020, commentText=This is a comment made on the Rpt-Travail_Stephane_2020-08-19]], documents=null, customer=null]
+2020-08-20 08:56:34,039 DEBUG com.aymeric.medreport.service.ReportService [http-nio-8080-exec-10] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Travail_Stephane_2020-08-19, domain=DAMAGE, status=PENDING, comment=[Comment [id=null, modificationDate=null, creationDate=Wed Aug 19 11:45:00 CEST 2020, commentText=This is a comment made on the Rpt-Travail_Stephane_2020-08-19]], documents=null, customer=null]
+2020-08-20 09:01:53,396 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the id: 1
+2020-08-20 09:05:43,061 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-6] Getting report with the id: 1
+2020-08-20 09:07:34,748 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 16236 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:07:34,749 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:07:34,749 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:07:37,478 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.941 seconds (JVM running for 3.561)
+2020-08-20 09:07:55,500 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-1] Getting report with the id: 1
+2020-08-20 09:08:04,022 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-4] Getting customer with the id: 1
+2020-08-20 09:08:12,658 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8320 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:08:12,658 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:08:12,659 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:08:15,411 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.962 seconds (JVM running for 3.578)
+2020-08-20 09:08:17,829 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the id: 1
+2020-08-20 09:08:39,564 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 3144 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:08:39,565 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:08:39,565 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:08:42,251 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.896 seconds (JVM running for 3.509)
+2020-08-20 09:08:47,186 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-1] Getting report with the id: 1
+2020-08-20 09:12:21,990 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1712 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:12:21,991 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:12:21,991 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:12:24,757 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.974 seconds (JVM running for 3.577)
+2020-08-20 09:12:36,873 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the id: 1
+2020-08-20 09:12:36,912 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-2] Retrieved customer: [FAILED toString()]
+2020-08-20 09:13:28,954 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12884 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:13:28,955 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:13:28,956 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:13:31,672 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.923 seconds (JVM running for 3.535)
+2020-08-20 09:13:37,982 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 1
+2020-08-20 09:13:38,021 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-1] Retrieved customer: [FAILED toString()]
+2020-08-20 09:14:25,019 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1844 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:14:25,020 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:14:25,020 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:14:27,671 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.86 seconds (JVM running for 3.463)
+2020-08-20 09:14:34,305 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 1
+2020-08-20 09:14:54,569 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2172 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:14:54,570 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:14:54,570 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:14:57,291 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.936 seconds (JVM running for 3.538)
+2020-08-20 09:15:06,830 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 1
+2020-08-20 09:15:17,050 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-3] Getting report with the id: 1
+2020-08-20 09:21:50,964 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-6] Getting report with the id: 1
+2020-08-20 09:21:57,591 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-7] Getting customer with the id: 1
+2020-08-20 09:30:50,520 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2900 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:30:50,521 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:30:50,521 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:30:53,248 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.938 seconds (JVM running for 3.549)
+2020-08-20 09:31:27,672 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 1
+2020-08-20 09:33:45,047 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Jean, dateOfBirth=Wed Oct 01 08:45:00 CET 1980, address=[com.aymeric.medreport.model.Address@7783fc40], reports=null]
+2020-08-20 09:35:54,573 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-10] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Dupont_Jean_2020-08-20, domain=ACCIDENT, status=PENDING, comment=[Comment [id=null, modificationDate=null, creationDate=Wed Aug 19 11:45:00 CEST 2020, commentText=This is a comment made on the Rpt-Dupont_Jean_2020-08-20]], documents=null, customer=null]
+2020-08-20 09:35:54,574 DEBUG com.aymeric.medreport.service.ReportService [http-nio-8080-exec-10] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Dupont_Jean_2020-08-20, domain=ACCIDENT, status=PENDING, comment=[Comment [id=null, modificationDate=null, creationDate=Wed Aug 19 11:45:00 CEST 2020, commentText=This is a comment made on the Rpt-Dupont_Jean_2020-08-20]], documents=null, customer=null]
+2020-08-20 09:38:32,248 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-1] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Dupont_Jean_2020-04-18, domain=DISEASE, status=ACCEPTED, comment=[Comment [id=null, modificationDate=null, creationDate=Sat Apr 18 12:00:00 CEST 2020, commentText=This is a comment made on the Rpt-Dupont_Jean_2020-04-18]], documents=null, customer=null]
+2020-08-20 09:38:32,248 DEBUG com.aymeric.medreport.service.ReportService [http-nio-8080-exec-1] Saving the report: Report [id=null, modificationDate=null, creationDate=Wed Aug 19 09:45:00 CEST 2020, title=Rpt-Dupont_Jean_2020-04-18, domain=DISEASE, status=ACCEPTED, comment=[Comment [id=null, modificationDate=null, creationDate=Sat Apr 18 12:00:00 CEST 2020, commentText=This is a comment made on the Rpt-Dupont_Jean_2020-04-18]], documents=null, customer=null]
+2020-08-20 09:43:13,978 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Getting customer with the id: 2
+2020-08-20 09:46:51,064 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 14772 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 09:46:51,065 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 09:46:51,065 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 09:46:53,774 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.92 seconds (JVM running for 3.534)
+2020-08-20 10:05:19,441 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 2
+2020-08-20 10:09:58,031 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-5] Getting customer with the id: 2
+2020-08-20 10:18:37,999 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Getting customer with the id: 2
+2020-08-20 10:19:11,655 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-10] Getting customer with the id: 1
+2020-08-20 10:19:17,352 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-9] Getting customer with the id: 2
+2020-08-20 10:19:40,977 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the id: 1
+2020-08-20 10:22:32,522 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-4] Getting customer with the id: 1
+2020-08-20 10:37:25,597 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-7] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Pierre, dateOfBirth=Wed Oct 01 10:54:00 CET 1986, address=[com.aymeric.medreport.model.Address@1e7f8970], reports=[Report [id=null, modificationDate=Fri Jan 23 16:13:00 CET 2015, creationDate=Thu Jan 22 11:22:00 CET 2015, title=Rpt-Dupont_Pierre_2020-01-22, domain=DISEASE, status=REFUSED, comment=[Comment [id=null, modificationDate=null, creationDate=Fri Jan 23 16:13:00 CET 2015, commentText=This is a comment made on the Rpt-Dupont_Pierre_2020-01-22]], documents=[com.aymeric.medreport.model.Document@274493ea], customer=null]]]
+2020-08-20 10:42:38,315 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Pierre, dateOfBirth=Wed Oct 01 10:54:00 CET 1986, address=[com.aymeric.medreport.model.Address@2f1ec1fb], reports=[Report [id=null, modificationDate=Fri Jan 23 16:13:00 CET 2015, creationDate=Thu Jan 22 11:22:00 CET 2015, title=Rpt-Dupont_Pierre_2020-01-22, domain=DISEASE, status=REFUSED, comment=[], documents=[com.aymeric.medreport.model.Document@71a50593], customer=null]]]
+2020-08-20 10:46:21,224 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Pierre, dateOfBirth=Wed Oct 01 10:54:00 CET 1986, address=[com.aymeric.medreport.model.Address@10782ad1], reports=[Report [id=null, modificationDate=Fri Jan 23 16:13:00 CET 2015, creationDate=Thu Jan 22 11:22:00 CET 2015, title=Rpt-Dupont_Pierre_2020-01-22, domain=DISEASE, status=REFUSED, comment=[], documents=[], customer=null]]]
+2020-08-20 11:12:09,784 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8576 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 11:12:09,784 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 11:12:09,785 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 11:12:12,605 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.03 seconds (JVM running for 3.645)
+2020-08-20 11:12:16,307 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Saving the customer: Customer [customerNumber=null, lastName=Durand, firstName=Jeanne, dateOfBirth=Sat May 14 07:33:00 CEST 1988, address=[com.aymeric.medreport.model.Address@3ca03d4e], reports=[Report [id=null, modificationDate=null, creationDate=Sun Feb 26 14:13:00 CET 2017, title=Rpt-Durand_Jeanne_2017-02-26, domain=DAMAGE, status=ACCEPTED, comment=[Comment [id=null, modificationDate=null, creationDate=Sun Feb 26 14:13:00 CET 2017, commentText=This is a comment made on the Rpt-Durand_Jeanne_2017-02-26]], documents=[], customer=null]]]
+2020-08-20 11:17:27,149 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 15656 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 11:17:27,150 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 11:17:27,150 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 11:17:29,922 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.984 seconds (JVM running for 3.594)
+2020-08-20 11:17:58,412 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-4] Getting customer with the id: 6
+2020-08-20 11:25:19,337 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-8] Getting report with the id: 7
+2020-08-20 11:44:07,555 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9160 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 11:44:07,556 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 11:44:07,556 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 11:44:11,098 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.757 seconds (JVM running for 4.412)
+2020-08-20 11:45:54,026 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9964 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 11:45:54,027 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 11:45:54,027 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 11:45:56,684 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.86 seconds (JVM running for 3.466)
+2020-08-20 11:46:38,527 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Saving the customer: Customer [customerNumber=null, lastName=Durand, firstName=Jeanne, dateOfBirth=Sat May 14 07:33:00 CEST 1988, address=[com.aymeric.medreport.model.Address@373ffc01], reports=[Report [id=null, modificationDate=null, creationDate=Sun Feb 26 14:13:00 CET 2017, title=Rpt-Durand_Jeanne_2017-02-26, domain=DAMAGE, status=ACCEPTED, comment=[Comment [id=null, modificationDate=null, creationDate=Sun Feb 26 14:13:00 CET 2017, commentText=This is a comment made on the Rpt-Durand_Jeanne_2017-02-26]], documents=[com.aymeric.medreport.model.Document@4bf31219], customer=null]]]
+2020-08-20 11:59:49,294 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Jean, dateOfBirth=Tue Apr 22 11:45:00 CET 1975, address=[com.aymeric.medreport.model.Address@76a06b0a], reports=[Report [id=null, modificationDate=null, creationDate=Mon Aug 13 17:20:00 CEST 2012, title=Rpt-Dupont_Jean_2012-08-13, domain=DISEASE, status=ACCEPTED, comment=[Comment [id=null, modificationDate=null, creationDate=Mon Aug 13 17:20:00 CEST 2012, commentText=This is a comment made on the Rpt-Dupont_Jean_2012-08-13]], documents=[com.aymeric.medreport.model.Document@729ff106], customer=null], Report [id=null, modificationDate=Thu Aug 20 12:45:00 CEST 2020, creationDate=Thu Aug 20 10:12:00 CEST 2020, title=Rpt-Dupont_Jean_2020-08-20, domain=ACCIDENT, status=PENDING, comment=[Comment [id=null, modificationDate=null, creationDate=Thu Aug 20 12:45:00 CEST 2020, commentText=This is a comment made on the Rpt-Dupont_Jean_2020-08-20]], documents=[com.aymeric.medreport.model.Document@379d6131], customer=null]]]
+2020-08-20 13:02:49,345 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-5] Saving the customer: Customer [customerNumber=null, lastName=Dupont, firstName=Pierre, dateOfBirth=Sun May 27 02:12:00 CEST 1984, address=[com.aymeric.medreport.model.Address@5bce5351], reports=[Report [id=null, modificationDate=null, creationDate=Mon Sep 17 18:02:30 CEST 2018, title=Rpt-Dupont_Pierre_2018-09-17, domain=DAMAGE, status=REFUSED, comment=[Comment [id=null, modificationDate=null, creationDate=Mon Sep 17 18:02:31 CEST 2018, commentText=This is a comment made on the Rpt-Dupont_Pierre_2018-09-17]], documents=[com.aymeric.medreport.model.Document@1eccc64c], customer=null]]]
+2020-08-20 13:08:54,638 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 1
+2020-08-20 13:09:01,972 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the id: 2
+2020-08-20 13:09:19,251 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-4] Getting customer with the id: 3
+2020-08-20 13:30:48,622 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 3872 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 13:30:48,623 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 13:30:48,623 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 13:30:51,783 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.395 seconds (JVM running for 4.005)
+2020-08-20 13:30:55,772 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the id: 8
+2020-08-20 13:30:55,801 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-1] No customer found with the id: 8
+2020-08-20 13:31:45,050 DEBUG com.aymeric.medreport.controller.ReportController [http-nio-8080-exec-4] Getting report with the id: 7
+2020-08-20 13:31:45,053 INFO com.aymeric.medreport.service.ReportService [http-nio-8080-exec-4] No report found with the id: 7
+2020-08-20 13:32:59,335 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-8] Getting customer with the last name as: dup
+2020-08-20 13:32:59,442 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-8] No customer with the last name dup found with the id: 0
+2020-08-20 13:35:09,167 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dupont
+2020-08-20 13:35:09,169 INFO com.aymeric.medreport.service.CustomerService [http-nio-8080-exec-2] No customer with the last name dupont found with the id: 0
+2020-08-20 13:35:39,657 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: Dupont
+2020-08-20 13:35:53,786 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: Dup
+2020-08-20 13:51:34,087 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 7184 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 13:51:34,087 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 13:51:34,088 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 13:51:36,806 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.928 seconds (JVM running for 3.536)
+2020-08-20 13:52:00,995 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10100 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 13:52:00,996 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 13:52:00,996 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 13:52:03,650 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.863 seconds (JVM running for 3.461)
+2020-08-20 13:52:06,483 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: Dup
+2020-08-20 13:52:14,120 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 14660 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 13:52:14,121 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 13:52:14,121 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 13:52:24,438 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1968 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 13:52:24,439 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 13:52:24,439 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 13:52:27,152 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 2.919 seconds (JVM running for 3.528)
+2020-08-20 13:52:32,844 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:41:35,433 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 7860 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:41:35,434 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:41:35,435 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:44:50,102 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9812 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:44:50,103 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:44:50,103 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:44:53,575 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.682 seconds (JVM running for 4.283)
+2020-08-20 14:45:22,990 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:46:28,993 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 14996 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:46:28,994 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:46:28,994 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:46:32,459 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.673 seconds (JVM running for 4.284)
+2020-08-20 14:46:36,705 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: dup
+2020-08-20 14:46:59,104 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 6820 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:46:59,105 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:46:59,106 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:47:02,587 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.69 seconds (JVM running for 4.292)
+2020-08-20 14:47:05,947 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:49:27,922 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13856 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:49:27,923 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:49:27,923 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:49:31,374 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.658 seconds (JVM running for 4.264)
+2020-08-20 14:49:37,195 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:51:31,751 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 13032 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:51:31,752 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:51:31,753 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:51:35,207 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.662 seconds (JVM running for 4.271)
+2020-08-20 14:53:49,476 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 1936 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:53:49,477 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:53:49,477 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:53:52,919 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.654 seconds (JVM running for 4.261)
+2020-08-20 14:56:19,114 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 12308 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:56:19,115 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:56:19,115 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:56:22,622 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.715 seconds (JVM running for 4.316)
+2020-08-20 14:56:25,790 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:56:59,945 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 14:57:54,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10964 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:57:54,291 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:57:54,291 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:57:57,748 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.673 seconds (JVM running for 4.284)
+2020-08-20 14:58:01,246 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:58:25,524 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 14:59:01,037 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 3744 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 14:59:01,037 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 14:59:01,038 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 14:59:04,489 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.662 seconds (JVM running for 4.26)
+2020-08-20 14:59:09,150 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 14:59:17,652 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:09:42,067 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 316 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:09:42,068 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:09:42,068 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:09:45,609 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.749 seconds (JVM running for 4.364)
+2020-08-20 15:09:49,463 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 15:09:51,393 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:10:31,570 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 8660 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:10:31,571 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:10:31,571 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:10:35,093 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.731 seconds (JVM running for 4.34)
+2020-08-20 15:10:45,542 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 15:10:46,973 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:14:49,600 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 14616 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:14:49,601 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:14:49,601 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:14:53,113 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.721 seconds (JVM running for 4.332)
+2020-08-20 15:14:56,533 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 15:14:58,744 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:31:59,607 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10400 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:31:59,607 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:31:59,608 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:32:03,150 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.753 seconds (JVM running for 4.378)
+2020-08-20 15:32:11,382 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-2] Getting customer with the last name as: dup
+2020-08-20 15:32:13,353 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:32:58,490 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 5776 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:32:58,491 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:32:58,491 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:33:34,137 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 10116 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:33:34,138 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:33:34,138 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:33:37,654 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.726 seconds (JVM running for 4.332)
+2020-08-20 15:33:41,983 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: dup
+2020-08-20 15:33:43,666 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:35:42,234 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2664 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:35:42,235 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:35:42,235 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:48:08,435 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 3184 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:48:08,436 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:48:08,436 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:48:11,938 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.711 seconds (JVM running for 4.331)
+2020-08-20 15:48:17,017 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: dup
+2020-08-20 15:48:18,758 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:48:57,059 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 9252 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:48:57,060 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:48:57,060 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:49:00,561 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.707 seconds (JVM running for 4.324)
+2020-08-20 15:49:03,762 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: dup
+2020-08-20 15:49:05,767 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup
+2020-08-20 15:56:39,551 INFO org.springframework.boot.StartupInfoLogger [main] Starting MedreportApplication on DESKTOP-9AA1KRO with PID 2248 (C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport\target\classes started by Aymeric NEUMANN in C:\Users\Aymeric NEUMANN\Desktop\Groupe Mutuel\medreport)
+2020-08-20 15:56:39,552 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-08-20 15:56:39,553 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 15:56:43,013 INFO org.springframework.boot.StartupInfoLogger [main] Started MedreportApplication in 3.667 seconds (JVM running for 4.274)
+2020-08-20 15:56:47,117 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-1] Getting customer with the last name as: dup
+2020-08-20 15:56:47,277 DEBUG com.aymeric.medreport.utils.CacheEventLogger [Ehcache [_default_]-0] Cache key: 0, Cache old value null, Cache new value Page 1 of 1 containing com.aymeric.medreport.model.Customer instances
+2020-08-20 15:56:49,145 DEBUG com.aymeric.medreport.controller.CustomerController [http-nio-8080-exec-3] Getting customer with the last name as: dup

@@ -1,5 +1,6 @@
 package com.aymeric.medreport.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -16,6 +17,8 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.springframework.cache.annotation.Cacheable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -27,7 +30,12 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
  */
 @Entity
 @Cacheable
-public class Report {
+public class Report implements Serializable {
+
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = 5692543073666778733L;
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -51,9 +59,11 @@ public class Report {
     private Status status;
     
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Comment> comment;
     
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Document> documents;
     
     @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
