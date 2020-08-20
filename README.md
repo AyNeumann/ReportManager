@@ -10,7 +10,7 @@ This is a simple test project to get started on:
 
 ***
 ## JSON sample to create basic datas:
-### Create a Customer with an adress and a report:
+### Create a Customer with an adress and a report with a commennt:
 **URL**: http://localhost:8080/customer
 ```json
 {
@@ -35,6 +35,10 @@ This is a simple test project to get started on:
             "domain": "DISEASE",
             "status": "REFUSED",
             "comment": [
+                {
+                    "creationDate": "2015-01-23T15:13:00.000+00:00",
+                    "commentText": "This is a comment made on the Rpt-Dupont_Pierre_2020-01-22"
+                }
             ],
             "documents": [
             ]
