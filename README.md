@@ -46,3 +46,4 @@ This is a simple test project to get started on:
     ]
 }
 ```
+*Note*: This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report table.
