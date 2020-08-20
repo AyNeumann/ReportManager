@@ -46,4 +46,6 @@ This is a simple test project to get started on:
     ]
 }
 ```
-*Note*: This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report table.
+*Note*: This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report' table.
+
+UPDATE report SET customer_customer_number = 1 WHERE id = 1;
