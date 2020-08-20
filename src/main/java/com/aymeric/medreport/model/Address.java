@@ -13,6 +13,10 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Type;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 /**
  * Customer address entity class
  * @author Aymeric NEUMANN
@@ -46,9 +50,11 @@ public class Address {
     private String country;
     
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     private String details;
     
     @ManyToMany (mappedBy = "address", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
+    @JsonBackReference(value = "customer-address")
     private List<Customer> customer;
     
     /**
@@ -142,7 +148,19 @@ public class Address {
         this.details = details;
     }
     
-    
+    /**
+     * @return the customer
+     */
+    public List<Customer> getCustomer() {
+        return customer;
+    }
+
+    /**
+     * @param customer the customer to set
+     */
+    public void setCustomer(List<Customer> customer) {
+        this.customer = customer;
+    }
     
     
 }

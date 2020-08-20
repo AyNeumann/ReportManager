@@ -3,6 +3,9 @@ package com.aymeric.medreport.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
+import com.aymeric.medreport.controller.CustomerController;
+import com.aymeric.medreport.controller.ReportController;
+
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -19,20 +22,22 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EnableSwagger2
 @ComponentScan(basePackageClasses = {
+        ReportController.class,
+        CustomerController.class
 })
 public class SwaggerUiWebMvcConfigurer {
-    
+
     @Bean
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)
-          .groupName("medreport-api")
-          .apiInfo(apiInfo())
-          .select()                                  
-          .apis(RequestHandlerSelectors.any())              
-          .paths(PathSelectors.any())                          
-          .build();                                           
+                .groupName("medreport-api")
+                .apiInfo(apiInfo())
+                .select()                                  
+                .apis(RequestHandlerSelectors.any())              
+                .paths(PathSelectors.any())                          
+                .build();                                           
     }
-    
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Report  API")

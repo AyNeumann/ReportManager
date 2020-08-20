@@ -37,11 +37,21 @@ public class Customer {
     @NotNull
     private Date dateOfBirth;
     
-    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.MERGE, CascadeType.REFRESH })
+    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Address> address;
     
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Report> reports;
+    
+    /**
+     * ToString override method
+     */
+    @Override
+    public String toString() {
+        return "Customer [customerNumber=" + customerNumber + ", lastName=" + lastName + ", firstName=" + firstName
+                + ", dateOfBirth=" + dateOfBirth + ", address=" + address + ", reports=" + reports + "]";
+    }
+    
     /**
      * @return the lastName
      */
@@ -85,10 +95,38 @@ public class Customer {
     }
     
     /**
+     * @return the address
+     */
+    public List<Address> getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address the address to set
+     */
+    public void setAddress(List<Address> address) {
+        this.address = address;
+    }
+
+    /**
+     * @return the reports
+     */
+    public List<Report> getReports() {
+        return reports;
+    }
+
+    /**
+     * @param reports the reports to set
+     */
+    public void setReports(List<Report> reports) {
+        this.reports = reports;
+    }
+    
+    /**
      * @return the customerNumber
      */
     public Long getCustomerNumber() {
         return customerNumber;
-    } 
+    }
     
 }

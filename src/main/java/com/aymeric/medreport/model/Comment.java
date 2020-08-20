@@ -10,6 +10,8 @@ import javax.persistence.Lob;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.annotations.Type;
+
 /**
  * Report comment entity class
  * @author Aymeric NEUMANN
@@ -25,14 +27,20 @@ public class Comment {
     @NotNull
     private Date creationDate;
     
-    @NotNull
     private Date modificationDate;
     
     @Lob
     @NotNull
     @NotBlank
+    @Type(type = "org.hibernate.type.TextType")
     private String commentText;
     
+    @Override
+    public String toString() {
+        return "Comment [id=" + id + ", modificationDate=" + modificationDate + ", creationDate=" + creationDate
+                + ", commentText=" + commentText + "]";
+    }
+
     /**
      * @return the creationDate
      */

@@ -3,6 +3,7 @@ package com.aymeric.medreport.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -16,6 +17,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.cache.annotation.Cacheable;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 /**
  * Report entity class
@@ -33,6 +36,8 @@ public class Report {
     @NotNull
     private Date creationDate;
     
+    private Date modificationDate;
+    
     @NotNull
     @NotBlank
     private String title;
@@ -45,15 +50,23 @@ public class Report {
     @Enumerated(EnumType.STRING)
     private Status status;
     
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Comment> comment;
     
     @OneToMany
     private List<Document> documents;
     
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @JsonBackReference(value = "customer-report")
     private Customer customer;
     
+    @Override
+    public String toString() {
+        return "Report [id=" + id + ", modificationDate=" + modificationDate + ", creationDate=" + creationDate
+                + ", title=" + title + ", domain=" + domain + ", status=" + status + ", comment=" + comment
+                + ", documents=" + documents + ", customer=" + customer + "]";
+    }
+
     /**
      * @return the id
      */
@@ -73,6 +86,20 @@ public class Report {
      */
     public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
+    }
+    
+    /**
+     * @return the modificationDate
+     */
+    public Date getModificationDate() {
+        return modificationDate;
+    }
+
+    /**
+     * @param modificationDate the modificationDate to set
+     */
+    public void setModificationDate(Date modificationDate) {
+        this.modificationDate = modificationDate;
     }
 
     /**
@@ -129,5 +156,33 @@ public class Report {
      */
     public void setDocuments(List<Document> documents) {
         this.documents = documents;
+    }
+    
+    /**
+     * @return the comment
+     */
+    public List<Comment> getComment() {
+        return comment;
+    }
+
+    /**
+     * @param comment the comment to set
+     */
+    public void setComment(List<Comment> comment) {
+        this.comment = comment;
+    }
+
+    /**
+     * @return the customer
+     */
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    /**
+     * @param customer the customer to set
+     */
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }
