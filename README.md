@@ -7,6 +7,7 @@ This is a simple test project to get started on:
   - PostGreSQL database
   - Logback
   - Swagger with springfox library
+  - EhCache
 
 ***
 ## JSON sample to create basic datas:
@@ -145,13 +146,14 @@ This is a simple test project to get started on:
 ```
 
 ## SQL Queries to link entities:
+### Linking reports to customers:
 ```sql
 UPDATE report SET customer_customer_number = 1 WHERE id = 1;
 UPDATE report SET customer_customer_number = 2 WHERE id = 2;
 UPDATE report SET customer_customer_number = 2 WHERE id = 3;
 UPDATE report SET customer_customer_number = 3 WHERE id = 4;
 ```
-
+***
 ## URLs:
 ### Swagger URLs:
 - See api endpoints as JSON: http://localhost:8080/v2/api-docs
