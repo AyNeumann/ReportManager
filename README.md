@@ -13,7 +13,9 @@ This is a simple test project to get started on:
 ### Create a Customers with adresses, reports and commennts:
 **URL**: http://localhost:8080/customer
 
-*Note*: Each customer must be created separately.
+*Notes*: 
+  - Each customer must be created separately.
+  - This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report' table, see next section.
 ```json
 {
     "lastName": "Durand",
@@ -141,7 +143,6 @@ This is a simple test project to get started on:
     ]
 }
 ```
-*Note*: This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report' table, see next section.
 
 ## SQL Queries to link entities:
 ```sql
