@@ -7,6 +7,7 @@ This is a simple test project to get started on:
   - PostGreSQL database
   - Logback
   - Swagger with springfox library
+  - EhCache
 
 ***
 ## JSON sample to create basic datas:
