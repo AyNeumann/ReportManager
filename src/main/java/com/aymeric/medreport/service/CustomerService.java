@@ -46,7 +46,7 @@ public class CustomerService {
             logger.info(errMessage);
             throw new MedReportEntityExceptionDTO(errMessage);
         }
-        
+
         return customer.get();
     }
 
@@ -58,7 +58,7 @@ public class CustomerService {
     public Page<Customer> getCustomersByLastName(final String lastName, final Integer pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber, NUM_OF_USER_PER_PAGE, Sort.by("lastName"));
 
-        Page<Customer> customers = customerRepository.findByLastNameContaining(pageable, lastName);
+        Page<Customer> customers = customerRepository.findByLastNameContainingIgnoreCase(pageable, lastName);
 
         if(customers.isEmpty()) {
             logger.info("No customer with the last name {} found with the id: {}", lastName, pageNumber);
@@ -75,7 +75,7 @@ public class CustomerService {
     public Customer createCustomer(final Customer customer) {
         return customerRepository.save(customer);
     }
-    
+
     /**
      * Delete the customer with the matching id
      * @param id id of the customer to delete
@@ -84,7 +84,7 @@ public class CustomerService {
     public boolean deleteCustomerById(final Long id) {
         boolean isCustomerDeleted = false;
         boolean isCustomerValid = customerRepository.existsById(id);
-        
+
         if(isCustomerValid) {
             logger.debug("Deleting customer with the id: {}", id);
             customerRepository.deleteById(id);
@@ -94,7 +94,7 @@ public class CustomerService {
             logger.info(errMessage);
             throw new MedReportEntityExceptionDTO(errMessage);
         }
-        
+
         return isCustomerDeleted;
     }
 

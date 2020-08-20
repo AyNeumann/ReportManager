@@ -21,5 +21,5 @@ public interface CustomerRepository extends JpaRepository<Customer, Long>,  Pagi
      * @param pageable page parameters
      * @return a page of result
      */
-    Page<Customer> findByLastNameContaining(Pageable pageable, String lastName);
+    Page<Customer> findByLastNameContainingIgnoreCase(Pageable pageable, String lastName);
 }

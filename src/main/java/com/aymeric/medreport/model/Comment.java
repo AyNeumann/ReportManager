@@ -40,6 +40,13 @@ public class Comment {
         return "Comment [id=" + id + ", modificationDate=" + modificationDate + ", creationDate=" + creationDate
                 + ", commentText=" + commentText + "]";
     }
+    
+    /**
+     * @return the id
+     */
+    public Long getId() {
+        return id;
+    }
 
     /**
      * @return the creationDate

@@ -22,6 +22,13 @@ public class Document {
     
     @NotNull
     URL url;
+    
+    /**
+     * @return the id
+     */
+    public Long getId() {
+        return id;
+    }
 
     /**
      * @return the url
@@ -35,12 +42,5 @@ public class Document {
      */
     public void setUrl(URL url) {
         this.url = url;
-    }
-
-    /**
-     * @return the id
-     */
-    public Long getId() {
-        return id;
     }
 }
