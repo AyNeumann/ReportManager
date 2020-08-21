@@ -21,7 +21,7 @@ This is a simple test project to get started on:
 {
     "lastName": "Durand",
     "firstName": "Jeanne",
-    "dateOfBirth": "1988-05-14T05:33:00.000+00:00",
+    "dateOfBirth": "1988-05-14",
     "address": [
         {
             "streetNumbers": "886",
@@ -58,7 +58,7 @@ This is a simple test project to get started on:
 {
     "lastName": "Dupont",
     "firstName": "Jean",
-    "dateOfBirth": "1975-04-22T10:45:00.000+00:00",
+    "dateOfBirth": "1975-04-22",
     "address": [
         {
             "streetNumbers": "86",
@@ -112,7 +112,7 @@ This is a simple test project to get started on:
 {
     "lastName": "Dupont",
     "firstName": "Pierre",
-    "dateOfBirth": "1984-05-27T00:12:00.000+00:00",
+    "dateOfBirth": "1984-05-27",
     "address": [
         {
             "streetNumbers": "122",
