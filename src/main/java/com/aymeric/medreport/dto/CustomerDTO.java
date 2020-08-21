@@ -1,60 +1,23 @@
-package com.aymeric.medreport.model;
+package com.aymeric.medreport.dto;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import com.aymeric.medreport.model.Address;
+import com.aymeric.medreport.model.Report;
 
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
-/**
- * Customer entity class
- * @author Aymeric NEUMANN
- *
- */
-@Entity
-public class Customer implements Serializable {
+public class CustomerDTO {
     
-    /**
-     * Generated serial version UID
-     */
-    private static final long serialVersionUID = 4504003902682243787L;
-
-    @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long customerNumber;
     
-    @NotNull
-    @NotBlank
     private String lastName;
     
-    @NotNull
-    @NotBlank
     private String firstName;
     
-    @NotNull
-    @Temporal(TemporalType.DATE)
     private Date dateOfBirth;
     
-    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Address> address;
     
-    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Report> reports;
     
     /**
@@ -143,4 +106,10 @@ public class Customer implements Serializable {
         return customerNumber;
     }
     
+    /**
+     * @param customerNumber the customerNumber to set
+     */
+    public void setCustomerNumber(Long customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 }

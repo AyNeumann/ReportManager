@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -31,8 +33,10 @@ public class Comment implements Serializable {
     private Long id;
     
     @NotNull
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
     
+    @Temporal(TemporalType.TIMESTAMP)
     private Date modificationDate;
     
     @Lob
@@ -40,13 +44,7 @@ public class Comment implements Serializable {
     @NotBlank
     @Type(type = "org.hibernate.type.TextType")
     private String commentText;
-    
-    @Override
-    public String toString() {
-        return "Comment [id=" + id + ", modificationDate=" + modificationDate + ", creationDate=" + creationDate
-                + ", commentText=" + commentText + "]";
-    }
-    
+        
     /**
      * @return the id
      */

@@ -47,6 +47,8 @@ public class CustomerService {
             String errMessage = String.format("No customer found with the id: %s", id);
             logger.info(errMessage);
             throw new MedReportEntityExceptionDTO(errMessage);
+        } else {
+            logger.debug("Customer found: {}", customer.get());
         }
 
         return customer.get();

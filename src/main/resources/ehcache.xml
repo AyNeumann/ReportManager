@@ -8,6 +8,7 @@
 
 	<cache alias="customerCache">
 		<key-type>java.lang.Long</key-type>
+		<value-type>com.aymeric.medreport.model.Customer</value-type>
 		<expiry>
 			<ttl unit="seconds">30</ttl>
 		</expiry>

@@ -14,6 +14,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -40,42 +42,37 @@ public class Report implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    
+
     @NotNull
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
-    
+
+    @Temporal(TemporalType.TIMESTAMP)
     private Date modificationDate;
-    
+
     @NotNull
     @NotBlank
     private String title;
-    
+
     @NotNull
     @Enumerated(EnumType.STRING)
     private Domain domain;
-    
+
     @NotNull
     @Enumerated(EnumType.STRING)
     private Status status;
-    
+
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Comment> comment;
-    
+
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Document> documents;
-    
+
     @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @JsonBackReference(value = "customer-report")
     private Customer customer;
-    
-    @Override
-    public String toString() {
-        return "Report [id=" + id + ", modificationDate=" + modificationDate + ", creationDate=" + creationDate
-                + ", title=" + title + ", domain=" + domain + ", status=" + status + ", comment=" + comment
-                + ", documents=" + documents + ", customer=" + customer + "]";
-    }
 
     /**
      * @return the id
@@ -83,7 +80,7 @@ public class Report implements Serializable {
     public Long getId() {
         return id;
     }
-    
+
     /**
      * @return the creationDate
      */
@@ -97,7 +94,7 @@ public class Report implements Serializable {
     public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
-    
+
     /**
      * @return the modificationDate
      */
@@ -153,7 +150,7 @@ public class Report implements Serializable {
     public void setStatus(Status status) {
         this.status = status;
     }
-    
+
     /**
      * @return the documents
      */
@@ -167,7 +164,7 @@ public class Report implements Serializable {
     public void setDocuments(List<Document> documents) {
         this.documents = documents;
     }
-    
+
     /**
      * @return the comment
      */
