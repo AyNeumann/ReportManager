@@ -11,14 +11,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedAttributeNode;
+import javax.persistence.NamedEntityGraph;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 /**
  * Customer entity class
@@ -26,6 +25,10 @@ import org.hibernate.annotations.LazyCollectionOption;
  *
  */
 @Entity
+@NamedEntityGraph(name = "Customer.reports", attributeNodes = {
+        @NamedAttributeNode("reports"),
+        @NamedAttributeNode("address") 
+})
 public class Customer implements Serializable {
     
     /**
@@ -50,11 +53,9 @@ public class Customer implements Serializable {
     private Date dateOfBirth;
     
     @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Address> address;
     
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Report> reports;
     
     /**
