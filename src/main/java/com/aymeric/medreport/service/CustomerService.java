@@ -59,7 +59,7 @@ public class CustomerService {
      * @param id last name of the customer to get
      * @return a page of customers or an empty page
      */
-    @Cacheable(value = "customerPageCache", key = "#pageNumber")
+    @Cacheable(value = "customerPageCache", key = "#lastName.concat('-').concat(#pageNumber)")
     public Page<Customer> getCustomersByLastName(final String lastName, final Integer pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber, NUM_OF_USER_PER_PAGE, Sort.by("lastName"));
 
