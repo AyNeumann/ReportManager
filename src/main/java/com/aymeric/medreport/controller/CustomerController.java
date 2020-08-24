@@ -1,7 +1,6 @@
 package com.aymeric.medreport.controller;
 
 import java.lang.reflect.Type;
-import java.util.List;
 
 import javax.validation.Valid;
 
@@ -42,10 +41,11 @@ public class CustomerController {
     /** Logback logger reference. */
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
-    /** Reference to customer service class */
+    /** Reference to customer service class. */
     @Autowired
     private CustomerService customerService;
     
+    /** Model mapper reference. */
     @Autowired
     private ModelMapper modelMapper;
     
@@ -74,8 +74,7 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
-    }
-            )
+    })
     public CustomerDTO getById(@RequestParam(name = "id") final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                 
@@ -90,9 +89,8 @@ public class CustomerController {
     @GetMapping("/byLastName")
     @ApiOperation(value = "Get customer by last name", notes = "Getting one or many customers by last name")
     @ApiResponses(value = { 
-            @ApiResponse(code = 200, response = Page.class, message = "Success"), 
-    }
-            )
+            @ApiResponse(code = 200, response = Page.class, message = "Success") 
+    })
     public Page<CustomerDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
         logger.debug("Getting customer with the last name as: {}", lastName);
         return convertToDTOPage(customerService.getCustomersByLastName(lastName, pageNumber));
@@ -107,8 +105,7 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Boolean.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
-    }
-            )
+    })
     @DeleteMapping("/delete")
     public boolean deleteById(@RequestParam(name = "id") final Long id) {
         logger.debug("Deleting customer with the id: {}", id);
@@ -117,7 +114,7 @@ public class CustomerController {
     
     /**
      * Convert Customer Entity to CustomerDTO class
-     * @param customer customer Entity to convert
+     * @param customer Customer Entity to convert
      * @return a CustomerDTO
      */
     private CustomerDTO convertToDto(final Customer customer) {
@@ -141,28 +138,6 @@ public class CustomerController {
      */
     private Page<CustomerDTO> convertToDTOPage(final Page<Customer> customers) {
         Type pageType = new TypeToken<Page<CustomerDTO>>() {}.getType();
-        
-        return new ModelMapper().map(customers, pageType);
-    }
-    
-    /**
-     * Convert a list of Customer Entities to a list of CustomerDTO
-     * @param customers list of Customer Entities to convert
-     * @return a List of CustomerDTO
-     */
-    private List<CustomerDTO> convertToDTOList(final List<Customer> customers) {
-        Type pageType = new TypeToken<List<CustomerDTO>>() {}.getType();
-        
-        return new ModelMapper().map(customers, pageType);
-    }
-    
-    /**
-     * Convert a list of CustomerDTO to a list of Customer Entities
-     * @param customers list of CustomerDTO to convert
-     * @return a List of Customer Entities
-     */
-    private List<Customer> convertToEntityList(final List<CustomerDTO> customers) {
-        Type pageType = new TypeToken<List<Customer>>() {}.getType();
         
         return new ModelMapper().map(customers, pageType);
     }
