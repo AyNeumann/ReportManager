@@ -38,7 +38,7 @@ public class Customer implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long customerNumber;
+    private Long id;
     
     @NotNull
     @NotBlank
@@ -63,7 +63,7 @@ public class Customer implements Serializable {
      */
     @Override
     public String toString() {
-        return "Customer [customerNumber=" + customerNumber + ", lastName=" + lastName + ", firstName=" + firstName
+        return "Customer [id=" + id + ", lastName=" + lastName + ", firstName=" + firstName
                 + ", dateOfBirth=" + dateOfBirth + ", address=" + address + ", reports=" + reports + "]";
     }
     
@@ -140,8 +140,8 @@ public class Customer implements Serializable {
     /**
      * @return the customerNumber
      */
-    public Long getCustomerNumber() {
-        return customerNumber;
+    public Long getId() {
+        return id;
     }
     
 }

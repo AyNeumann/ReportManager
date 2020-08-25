@@ -8,7 +8,7 @@ import com.aymeric.medreport.model.Report;
 
 public class CustomerDTO {
     
-    private Long customerNumber;
+    private Long id;
     
     private String lastName;
     
@@ -25,7 +25,7 @@ public class CustomerDTO {
      */
     @Override
     public String toString() {
-        return "Customer [customerNumber=" + customerNumber + ", lastName=" + lastName + ", firstName=" + firstName
+        return "Customer [id=" + id + ", lastName=" + lastName + ", firstName=" + firstName
                 + ", dateOfBirth=" + dateOfBirth + ", address=" + address + ", reports=" + reports + "]";
     }
     
@@ -100,16 +100,16 @@ public class CustomerDTO {
     }
     
     /**
-     * @return the customerNumber
+     * @return the id
      */
-    public Long getCustomerNumber() {
-        return customerNumber;
+    public Long getId() {
+        return id;
     }
     
     /**
-     * @param customerNumber the customerNumber to set
+     * @param id the id to set
      */
-    public void setCustomerNumber(Long customerNumber) {
-        this.customerNumber = customerNumber;
+    public void setId(Long id) {
+        this.id = id;
     }
 }
