@@ -83,9 +83,7 @@ public class CustomerController {
     public CustomerDTO getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                
-        CustomerDTO result = convertToDto(customerService.getCustomerById(id));
-        logger.debug("Result: {}", result);
-        return result;
+        return convertToDto(customerService.getCustomerById(id));
     }
 
     /**
