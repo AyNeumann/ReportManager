@@ -12,7 +12,7 @@ This is a simple test project to get started on:
 ***
 ## JSON sample to create basic datas:
 ### Create a Customers with adresses, reports and commennts:
-**URL**: http://localhost:8080/customer
+**URL**: http://localhost:8080/customers
 
 *Notes*: 
   - Each customer must be created separately.
