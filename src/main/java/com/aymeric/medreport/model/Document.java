@@ -29,6 +29,11 @@ public class Document implements Serializable {
     @NotNull
     URL url;
     
+    @Override
+    public String toString() {
+        return "Document [id=" + id + ", url=" + url + "]";
+    }
+
     /**
      * @return the id
      */

@@ -48,6 +48,8 @@ public class ReportService {
             String errMessage = String.format("No report found with the id: %s", id);
             logger.info(errMessage);
             throw new MedReportEntityExceptionDTO(errMessage);
+        } else {
+            logger.debug("Customer found: {}", report.get());
         }
         
         return report.get();

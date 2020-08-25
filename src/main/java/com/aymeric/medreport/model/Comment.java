@@ -45,6 +45,12 @@ public class Comment implements Serializable {
     @Type(type = "org.hibernate.type.TextType")
     private String commentText;
         
+    @Override
+    public String toString() {
+        return "Comment [id=" + id + ", creationDate=" + creationDate + ", modificationDate=" + modificationDate
+                + ", commentText=" + commentText + "]";
+    }
+
     /**
      * @return the id
      */

@@ -72,6 +72,13 @@ public class Report implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @JsonBackReference(value = "customer-report")
     private Customer customer;
+    
+    @Override
+    public String toString() {
+        return "Report [id=" + id + ", creationDate=" + creationDate + ", modificationDate=" + modificationDate
+                + ", title=" + title + ", domain=" + domain + ", status=" + status + ", comment=" + comment
+                + ", documents=" + documents + "]";
+    }
 
     /**
      * @return the id
