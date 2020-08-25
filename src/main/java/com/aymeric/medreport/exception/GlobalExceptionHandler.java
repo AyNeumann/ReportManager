@@ -22,6 +22,6 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<MedReportEntityExceptionDTO> handleAapiEntityException(final MedReportEntityExceptionDTO ex) {
         MedReportEntityExceptionDTO exception = new MedReportEntityExceptionDTO(ex.getMessage(), HttpStatus.BAD_REQUEST, new Date());
-        return new ResponseEntity<MedReportEntityExceptionDTO>(exception, exception.getHttpErrorNumber());
+        return new ResponseEntity<>(exception, exception.getHttpErrorNumber());
     }
 }
