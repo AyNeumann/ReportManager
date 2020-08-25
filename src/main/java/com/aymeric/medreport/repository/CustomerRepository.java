@@ -21,5 +21,6 @@ public interface CustomerRepository extends JpaRepository<Customer, Long>,  Pagi
      * @param pageable page parameters
      * @return a page of result
      */
+    //@EntityGraph(value = "Customer.reports")
     Page<Customer> findByLastNameContainingIgnoreCase(Pageable pageable, String lastName);
 }

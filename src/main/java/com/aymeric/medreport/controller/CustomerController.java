@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,8 +35,8 @@ import io.swagger.annotations.ApiResponses;
  *
  */
 @RestController
-@RequestMapping("/customer")
-@Api(value = "CustomerController")
+@RequestMapping("customers")
+@Api(value = "Customer Controller")
 public class CustomerController {
 
     /** Logback logger reference. */
@@ -56,6 +57,10 @@ public class CustomerController {
      */
     @PostMapping("")
     @ApiOperation(value = "Create a customer", notes = "Save a customer in the database")
+    @ApiResponses(value = { 
+            @ApiResponse(code = 200, response = CustomerDTO.class, message = "Success"),
+            @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
+    })
     public CustomerDTO create(@RequestBody @Valid CustomerDTO customerDto) {
         logger.debug("Saving the customer: {}", customerDto);
         
@@ -69,13 +74,13 @@ public class CustomerController {
      * @param id id of the customer to get
      * @return the found customer or MedReportEntityExceptionDTO
      */
-    @GetMapping("byId")
+    @GetMapping("/{id}")
     @ApiOperation(value = "Get customer by Id", notes = "Getting a customer by his id")
     @ApiResponses(value = { 
-            @ApiResponse(code = 200, response = Customer.class, message = "Success"),
+            @ApiResponse(code = 200, response = CustomerDTO.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    public CustomerDTO getById(@RequestParam(name = "id") final Long id) {
+    public CustomerDTO getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                 
         return convertToDto(customerService.getCustomerById(id));
@@ -86,7 +91,7 @@ public class CustomerController {
      * @param id last name of the customer to get
      * @return a page of customers or an empty page
      */
-    @GetMapping("/byLastName")
+    @GetMapping(params = {"lastName", "pageNumber"})
     @ApiOperation(value = "Get customer by last name", notes = "Getting one or many customers by last name")
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Page.class, message = "Success") 
@@ -95,19 +100,19 @@ public class CustomerController {
         logger.debug("Getting customer with the last name as: {}", lastName);
         return convertToDTOPage(customerService.getCustomersByLastName(lastName, pageNumber));
     }
-    
+        
     /**
      * Delete the customer with the matching id
      * @param id id of the customer to delete
      * @return true if the customer has been deleted false otherwise
      */
+    @DeleteMapping("/{id}")
     @ApiOperation(value = "Delete customer by id", notes = "Deleting the customer with the matching id")
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Boolean.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    @DeleteMapping("/delete")
-    public boolean deleteById(@RequestParam(name = "id") final Long id) {
+    public boolean deleteById(@PathVariable final Long id) {
         logger.debug("Deleting customer with the id: {}", id);
         return customerService.deleteCustomerById(id);
     }

@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.List;
 
 import com.aymeric.medreport.model.Comment;
-import com.aymeric.medreport.model.Customer;
 import com.aymeric.medreport.model.Document;
 import com.aymeric.medreport.model.Domain;
 import com.aymeric.medreport.model.Status;
@@ -26,8 +25,6 @@ public class ReportDTO {
     private List<Comment> comment;
 
     private List<Document> documents;
-
-    private Customer customer;
     
     /**
      * ToString override method
@@ -36,7 +33,7 @@ public class ReportDTO {
     public String toString() {
         return "ReportDTO [id=" + id + ", creationDate=" + creationDate + ", modificationDate=" + modificationDate
                 + ", title=" + title + ", domain=" + domain + ", status=" + status + ", comment=" + comment
-                + ", documents=" + documents + ", customer=" + customer + "]";
+                + ", documents=" + documents + "]";
     }
 
     /**
@@ -149,19 +146,5 @@ public class ReportDTO {
      */
     public void setDocuments(List<Document> documents) {
         this.documents = documents;
-    }
-
-    /**
-     * @return the customer
-     */
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    /**
-     * @param customer the customer to set
-     */
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
     }
 }
