@@ -148,10 +148,10 @@ This is a simple test project to get started on:
 ## SQL Queries to link entities:
 ### Linking reports to customers:
 ```sql
-UPDATE report SET customer_customer_number = 1 WHERE id = 1;
-UPDATE report SET customer_customer_number = 2 WHERE id = 2;
-UPDATE report SET customer_customer_number = 2 WHERE id = 3;
-UPDATE report SET customer_customer_number = 3 WHERE id = 4;
+UPDATE report SET customer_id = 1 WHERE id = 1;
+UPDATE report SET customer_id = 2 WHERE id = 2;
+UPDATE report SET customer_id = 2 WHERE id = 3;
+UPDATE report SET customer_id = 3 WHERE id = 4;
 ```
 ***
 ## URLs:
