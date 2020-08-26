@@ -22,13 +22,23 @@ public class Document implements Serializable {
      */
     private static final long serialVersionUID = 6337017541382168795L;
 
+    /** Document id */
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     Long id;
     
+    /** URL where the document is stocked */
     @NotNull
     URL url;
     
+    /**
+     * ToString override method
+     */
+    @Override
+    public String toString() {
+        return "Document [id=" + id + ", url=" + url + "]";
+    }
+
     /**
      * @return the id
      */

@@ -8,6 +8,11 @@ import com.aymeric.medreport.model.Document;
 import com.aymeric.medreport.model.Domain;
 import com.aymeric.medreport.model.Status;
 
+/**
+ * Report entity data transfer object
+ * @author Aymeric NEUMANN
+ *
+ */
 public class ReportDTO {
     
     private Long id;

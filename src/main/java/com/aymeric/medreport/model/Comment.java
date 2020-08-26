@@ -28,23 +28,36 @@ public class Comment implements Serializable {
      */
     private static final long serialVersionUID = 8653437506466912925L;
 
+    /** Comment id */
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     
+    /** Comment creation date */
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
     
+    /** Comment modification date */
     @Temporal(TemporalType.TIMESTAMP)
     private Date modificationDate;
     
+    /** Comment contents */
     @Lob
     @NotNull
     @NotBlank
     @Type(type = "org.hibernate.type.TextType")
     private String commentText;
-        
+    
+    /**
+     * ToString override method
+     */
+    @Override
+    public String toString() {
+        return "Comment [id=" + id + ", creationDate=" + creationDate + ", modificationDate=" + modificationDate
+                + ", commentText=" + commentText + "]";
+    }
+
     /**
      * @return the id
      */

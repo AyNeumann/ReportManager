@@ -5,7 +5,11 @@ import java.util.Date;
 import org.springframework.http.HttpStatus;
 
 import io.swagger.annotations.ApiModelProperty;
-
+/**
+ * Custom Report Manager Entity Exception DTO 
+ * @author Aymeric NEUMANN
+ *
+ */
 public class MedReportEntityExceptionDTO extends RuntimeException {
 
     /**

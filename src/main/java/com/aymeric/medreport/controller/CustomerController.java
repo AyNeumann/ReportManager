@@ -82,7 +82,7 @@ public class CustomerController {
     })
     public CustomerDTO getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
-                
+               
         return convertToDto(customerService.getCustomerById(id));
     }
 
