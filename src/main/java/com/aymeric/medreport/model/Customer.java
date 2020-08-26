@@ -36,25 +36,31 @@ public class Customer implements Serializable {
      */
     private static final long serialVersionUID = 4504003902682243787L;
 
+    /** Customer Id */
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     
+    /** Customer last name */
     @NotNull
     @NotBlank
     private String lastName;
     
+    /** Customer first name */
     @NotNull
     @NotBlank
     private String firstName;
     
+    /** Customer date of birth */
     @NotNull
     @Temporal(TemporalType.DATE)
     private Date dateOfBirth;
     
+    /** Customer addresses */
     @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Address> address;
     
+    /** Customer reports */
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Report> reports;
     

@@ -6,6 +6,11 @@ import java.util.List;
 import com.aymeric.medreport.model.Address;
 import com.aymeric.medreport.model.Report;
 
+/**
+ * Customer entity data transfer object
+ * @author Aymeric NEUMANN
+ *
+ */
 public class CustomerDTO {
     
     private Long id;

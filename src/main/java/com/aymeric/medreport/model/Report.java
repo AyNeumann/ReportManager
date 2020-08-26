@@ -39,40 +39,52 @@ public class Report implements Serializable {
      */
     private static final long serialVersionUID = 5692543073666778733L;
 
+    /** Report Id */
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
+    /** Report creation date */
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
 
+    /** Report modification date */
     @Temporal(TemporalType.TIMESTAMP)
     private Date modificationDate;
 
+    /** Report title */
     @NotNull
     @NotBlank
     private String title;
 
+    /* Report domain */
     @NotNull
     @Enumerated(EnumType.STRING)
     private Domain domain;
 
+    /** Report status */
     @NotNull
     @Enumerated(EnumType.STRING)
     private Status status;
 
+    /** Report comments */
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @LazyToOne(LazyToOneOption.NO_PROXY)
     private List<Comment> comment;
 
+    /** Report attached documents */
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Document> documents;
 
+    /** Customer concerned by the report */
     @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     @JsonBackReference(value = "customer-report")
     private Customer customer;
     
+    /**
+     * ToString override method
+     */
     @Override
     public String toString() {
         return "Report [id=" + id + ", creationDate=" + creationDate + ", modificationDate=" + modificationDate
