@@ -16,7 +16,7 @@ This is a simple test project to get started on:
 
 *Notes*: 
   - Each customer must be created separately.
-  - This does not link the report to the customer. This must be done manually by updating the 'customer_customer_number' column in the 'report' table, see next section.
+  - This does not link the report to the customer. This must be done manually by updating the 'customer_id' column in the 'report' table, see next section.
 ```json
 {
     "lastName": "Durand",
