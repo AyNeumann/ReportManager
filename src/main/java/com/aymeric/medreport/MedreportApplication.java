@@ -1,9 +1,9 @@
 package com.aymeric.medreport;
 
-import org.modelmapper.ModelMapper;
+//import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class MedreportApplication {
@@ -12,9 +12,9 @@ public class MedreportApplication {
 		SpringApplication.run(MedreportApplication.class, args);
 	}
 	
-	@Bean
+	/*@Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
-    }
+    }*/
 
 }
