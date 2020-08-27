@@ -19,6 +19,8 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 /**
  * Customer entity class
  * @author Aymeric NEUMANN
@@ -62,6 +64,7 @@ public class Customer implements Serializable {
     
     /** Customer reports */
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @JsonManagedReference
     private List<Report> reports;
     
     /**
