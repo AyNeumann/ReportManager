@@ -19,8 +19,6 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 /**
  * Customer entity class
  * @author Aymeric NEUMANN
@@ -59,21 +57,32 @@ public class Customer implements Serializable {
     private Date dateOfBirth;
     
     /** Customer addresses */
-    @ManyToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Address> address;
     
     /** Customer reports */
-    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @JsonManagedReference
+    @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Report> reports;
     
+    public Customer() {}
+    
+    public Customer(Long id, @NotNull @NotBlank String lastName, @NotNull @NotBlank String firstName, 
+            @NotNull Date dateOfBirth, List<Address> address, List<Report> reports) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.reports = reports;
+    }
+
     /**
      * ToString override method
      */
     @Override
     public String toString() {
         return "Customer [id=" + id + ", lastName=" + lastName + ", firstName=" + firstName
-                + ", dateOfBirth=" + dateOfBirth + ", address=" + address + ", reports=" + reports + "]";
+                + ", dateOfBirth=" + dateOfBirth + "]";
     }
     
     /**

@@ -3,9 +3,7 @@ package com.aymeric.medreport.model;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,8 +13,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.Type;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 
 /**
  * Customer address entity class
@@ -59,8 +55,7 @@ public class Address implements Serializable {
     @Type(type = "org.hibernate.type.TextType")
     private String details;
     
-    @ManyToMany (mappedBy = "address", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
-    @JsonBackReference(value = "customer-address")
+    @ManyToMany
     private List<Customer> customer;
     
     /**
