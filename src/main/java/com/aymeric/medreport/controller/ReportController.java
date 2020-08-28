@@ -1,6 +1,5 @@
 package com.aymeric.medreport.controller;
 
-import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +14,7 @@ import com.aymeric.medreport.dto.MedReportEntityExceptionDTO;
 import com.aymeric.medreport.dto.ReportDTO;
 import com.aymeric.medreport.model.Report;
 import com.aymeric.medreport.service.ReportService;
+import com.aymeric.medreport.utils.ReportMapper;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -38,9 +38,8 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
     
-    /** Model mapper reference. */
     @Autowired
-    private ModelMapper modelMapper;
+    private ReportMapper reportMapper;
     
     /**
      * Create a report
@@ -50,14 +49,14 @@ public class ReportController {
     @PostMapping("")
     @ApiOperation(value = "Create a report", notes = "Save a report in the database")
     @ApiResponses(value = { 
-            @ApiResponse(code = 200, response = ReportDTO.class, message = "Success")
+            @ApiResponse(code = 200, response = Report.class, message = "Success")
     })
     public ReportDTO create(@RequestBody ReportDTO reportDto) {
         logger.debug("Saving the report: {}", reportDto);
         
-        Report report = convertToEntity(reportDto);
-        
-        return convertToDto(reportService.createReport(report));
+        Report report = reportMapper.reportDtoToReport(reportDto);
+                
+        return reportMapper.reportToReportDTO(reportService.createReport(report));
     }
     
     /**
@@ -74,25 +73,6 @@ public class ReportController {
     )
     public ReportDTO getById(@PathVariable final Long id) {
         logger.debug("Getting report with the id: {}", id);
-        return convertToDto(reportService.getReportById(id));
-    }
-    
-    /**
-     * Convert Report Entity to Report DTO class
-     * @param report Report Entity to convert
-     * @return a ReportDTO
-     */
-    private ReportDTO convertToDto(final Report report) {
-        return modelMapper.map(report, ReportDTO.class);
-    }
-    
-    /**
-     * Convert ReportDTO class to a Report Entity
-     * @param reportDTO ReportDTO to convert
-     * @return a Customer Entity
-     */
-    private Report convertToEntity(final ReportDTO reportDTO) {
-        return modelMapper.map(reportDTO, Report.class);
-    }
-    
+        return reportMapper.reportToReportDTO(reportService.getReportById(id));
+    }    
 }
