@@ -1,11 +1,7 @@
 package com.aymeric.medreport.controller;
 
-import java.lang.reflect.Type;
-
 import javax.validation.Valid;
 
-import org.modelmapper.ModelMapper;
-import org.modelmapper.TypeToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.aymeric.medreport.dto.CustomerDTO;
 import com.aymeric.medreport.dto.MedReportEntityExceptionDTO;
 import com.aymeric.medreport.model.Customer;
 import com.aymeric.medreport.service.CustomerService;
@@ -46,10 +41,6 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
     
-    /** Model mapper reference. */
-    @Autowired
-    private ModelMapper modelMapper;
-    
     /**
      * Create a customer
      * @param customer customer to create
@@ -58,15 +49,13 @@ public class CustomerController {
     @PostMapping("")
     @ApiOperation(value = "Create a customer", notes = "Save a customer in the database")
     @ApiResponses(value = { 
-            @ApiResponse(code = 200, response = CustomerDTO.class, message = "Success"),
+            @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    public CustomerDTO create(@RequestBody @Valid CustomerDTO customerDto) {
-        logger.debug("Saving the customer: {}", customerDto);
+    public Customer create(@RequestBody @Valid Customer customer) {
+        logger.debug("Saving the customer: {}", customer);
         
-        Customer customer = convertToEntity(customerDto);
-        
-        return convertToDto(customerService.createCustomer(customer));
+        return customerService.createCustomer(customer);
     }
 
     /**
@@ -77,13 +66,13 @@ public class CustomerController {
     @GetMapping("/{id}")
     @ApiOperation(value = "Get customer by Id", notes = "Getting a customer by his id")
     @ApiResponses(value = { 
-            @ApiResponse(code = 200, response = CustomerDTO.class, message = "Success"),
+            @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    public CustomerDTO getById(@PathVariable final Long id) {
+    public Customer getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                
-        return convertToDto(customerService.getCustomerById(id));
+        return customerService.getCustomerById(id);
     }
 
     /**
@@ -96,9 +85,9 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Page.class, message = "Success") 
     })
-    public Page<CustomerDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
+    public Page<Customer> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
         logger.debug("Getting customer with the last name as: {}", lastName);
-        return convertToDTOPage(customerService.getCustomersByLastName(lastName, pageNumber));
+        return customerService.getCustomersByLastName(lastName, pageNumber);
     }
         
     /**
@@ -115,35 +104,5 @@ public class CustomerController {
     public boolean deleteById(@PathVariable final Long id) {
         logger.debug("Deleting customer with the id: {}", id);
         return customerService.deleteCustomerById(id);
-    }
-    
-    /**
-     * Convert Customer Entity to CustomerDTO class
-     * @param customer Customer Entity to convert
-     * @return a CustomerDTO
-     */
-    private CustomerDTO convertToDto(final Customer customer) {
-        return modelMapper.map(customer, CustomerDTO.class);
-    }
-    
-    /**
-     * Convert CustomerDTO class to a Customer Entity
-     * @param customerDTO CustomerDTO to convert
-     * @return a Customer Entity
-     */
-    private Customer convertToEntity(final CustomerDTO customerDTO) {
-        return modelMapper.map(customerDTO, Customer.class);
-    }
-
-
-    /**
-     * Convert Customer Entities page to CustomerDTO page
-     * @param customers page of Customer Entities to convert
-     * @return a Page of CustomerDTO
-     */
-    private Page<CustomerDTO> convertToDTOPage(final Page<Customer> customers) {
-        Type pageType = new TypeToken<Page<CustomerDTO>>() {}.getType();
-        
-        return new ModelMapper().map(customers, pageType);
     }
 }

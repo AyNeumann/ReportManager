@@ -66,7 +66,7 @@ public class Report implements Serializable {
     private Status status;
 
     /** Report comments */
-    @OneToMany(mappedBy="report", fetch=FetchType.EAGER, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @OneToMany(mappedBy="report", fetch=FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Comment> comment;
 
     /** Report attached documents */
