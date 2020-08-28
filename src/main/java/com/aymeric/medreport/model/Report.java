@@ -12,6 +12,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
@@ -19,11 +20,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.annotations.LazyToOne;
-import org.hibernate.annotations.LazyToOneOption;
 import org.springframework.cache.annotation.Cacheable;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 
 /**
  * Report entity class
@@ -69,17 +66,16 @@ public class Report implements Serializable {
     private Status status;
 
     /** Report comments */
-    @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @LazyToOne(LazyToOneOption.NO_PROXY)
+    @OneToMany(mappedBy="report", fetch=FetchType.EAGER, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Comment> comment;
 
     /** Report attached documents */
     @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Document> documents;
-
-    /** Customer concerned by the report */
-    @ManyToOne(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
-    @JsonBackReference(value = "customer-report")
+    
+    /** Customer who own the report */
+    @ManyToOne
+    @JoinColumn(name = "id_customer")
     private Customer customer;
     
     /**
@@ -195,19 +191,5 @@ public class Report implements Serializable {
      */
     public void setComment(List<Comment> comment) {
         this.comment = comment;
-    }
-
-    /**
-     * @return the customer
-     */
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    /**
-     * @param customer the customer to set
-     */
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
     }
 }

@@ -25,6 +25,17 @@ public class CustomerDTO {
     
     private List<Report> reports;
     
+    public CustomerDTO() {}
+    
+    public CustomerDTO(Long id, String lastName, String firstName, Date dateOfBirth, List<Address> address, List<Report> reports) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.reports = reports;
+    }
+
     /**
      * ToString override method
      */
