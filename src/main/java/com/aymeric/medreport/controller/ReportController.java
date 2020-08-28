@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aymeric.medreport.dto.MedReportEntityExceptionDTO;
+import com.aymeric.medreport.dto.ReportDTO;
 import com.aymeric.medreport.model.Report;
 import com.aymeric.medreport.service.ReportService;
+import com.aymeric.medreport.utils.ReportMapper;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -36,6 +38,9 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
     
+    @Autowired
+    private ReportMapper reportMapper;
+    
     /**
      * Create a report
      * @param report report to create
@@ -46,10 +51,12 @@ public class ReportController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Report.class, message = "Success")
     })
-    public Report create(@RequestBody Report report) {
-        logger.debug("Saving the report: {}", report);
+    public ReportDTO create(@RequestBody ReportDTO reportDto) {
+        logger.debug("Saving the report: {}", reportDto);
+        
+        Report report = reportMapper.reportDtoToReport(reportDto);
                 
-        return reportService.createReport(report);
+        return reportMapper.reportToReportDTO(reportService.createReport(report));
     }
     
     /**
@@ -64,8 +71,8 @@ public class ReportController {
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
             }
     )
-    public Report getById(@PathVariable final Long id) {
+    public ReportDTO getById(@PathVariable final Long id) {
         logger.debug("Getting report with the id: {}", id);
-        return reportService.getReportById(id);
+        return reportMapper.reportToReportDTO(reportService.getReportById(id));
     }    
 }

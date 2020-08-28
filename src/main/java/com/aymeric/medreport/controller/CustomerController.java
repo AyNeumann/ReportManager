@@ -15,9 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.aymeric.medreport.dto.CustomerDTO;
 import com.aymeric.medreport.dto.MedReportEntityExceptionDTO;
 import com.aymeric.medreport.model.Customer;
 import com.aymeric.medreport.service.CustomerService;
+import com.aymeric.medreport.utils.CustomerMapper;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -41,6 +43,10 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
     
+    /** Reference to the CustomerMapper interface. */
+    @Autowired
+    private CustomerMapper customerMapper;
+    
     /**
      * Create a customer
      * @param customer customer to create
@@ -52,10 +58,12 @@ public class CustomerController {
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    public Customer create(@RequestBody @Valid Customer customer) {
-        logger.debug("Saving the customer: {}", customer);
+    public CustomerDTO create(@RequestBody @Valid CustomerDTO customerDto) {
+        logger.debug("Saving the customer: {}", customerDto);
         
-        return customerService.createCustomer(customer);
+        Customer customer = customerMapper.customerDtoToCustomer(customerDto);
+        
+        return customerMapper.customerToCustomerDto(customerService.createCustomer(customer));
     }
 
     /**
@@ -69,10 +77,10 @@ public class CustomerController {
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    public Customer getById(@PathVariable final Long id) {
+    public CustomerDTO getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                
-        return customerService.getCustomerById(id);
+        return customerMapper.customerToCustomerDto(customerService.getCustomerById(id));
     }
 
     /**
@@ -85,9 +93,9 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Page.class, message = "Success") 
     })
-    public Page<Customer> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
+    public Page<CustomerDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
         logger.debug("Getting customer with the last name as: {}", lastName);
-        return customerService.getCustomersByLastName(lastName, pageNumber);
+        return customerMapper.customerPageToCustomerDtoPage(customerService.getCustomersByLastName(lastName, pageNumber));
     }
         
     /**
