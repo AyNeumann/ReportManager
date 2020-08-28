@@ -61,7 +61,7 @@ public class Customer implements Serializable {
     private List<Address> address;
     
     /** Customer reports */
-    @OneToMany(fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @OneToMany(mappedBy="customer", fetch=FetchType.EAGER, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Report> reports;
     
     public Customer() {}

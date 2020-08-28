@@ -7,7 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
@@ -48,6 +50,10 @@ public class Comment implements Serializable {
     @NotBlank
     @Type(type = "org.hibernate.type.TextType")
     private String commentText;
+    
+    @ManyToOne
+    @JoinColumn(name = "id_report")
+    private Report report;
     
     /**
      * ToString override method
