@@ -6,12 +6,13 @@ This is a simple test project to get started on:
   - Spring Data JPA
   - PostGreSQL database
   - Logback
-  - Swagger with springfox library
+  - Swagger with Springfox library
   - EhCache
+  - MapStruct
 
 ***
-## JSON sample to create basic datas:
-### Create a Customers with adresses, reports and commennts:
+## JSON sample to create basic data:
+### Create a Customers with addresses, reports and comments:
 **URL**: http://localhost:8080/customers
 
 *Notes*: 
@@ -153,8 +154,15 @@ UPDATE report SET id_customer = 2 WHERE id = 2;
 UPDATE report SET id_customer = 2 WHERE id = 3;
 UPDATE report SET id_customer = 3 WHERE id = 4;
 ```
+### Linking comments to reports:
+```sql
+UPDATE comment SET id_report = 1 WHERE id = 1;
+UPDATE comment SET id_report = 2 WHERE id = 2;
+UPDATE comment SET id_report = 3 WHERE id = 3;
+UPDATE comment SET id_report = 4 WHERE id = 4;
+```
 ***
 ## URLs:
 ### Swagger URLs:
-- See api endpoints as JSON: http://localhost:8080/v2/api-docs
-- See api endpoints with Swagger UI: http://localhost:8080/swagger-ui/
+- See API endpoints as JSON: http://localhost:8080/v2/api-docs
+- See API endpoints with Swagger UI: http://localhost:8080/swagger-ui/
