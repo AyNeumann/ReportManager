@@ -5,7 +5,6 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -39,7 +38,6 @@ public class CustomerService {
      * @param id id of the customer to get
      * @return the found customer or MedReportEntityExceptionDTO
      */
-    @Cacheable(value = "customerCache", key = "#id")
     public Customer getCustomerById(final Long id) {
         Optional<Customer> customer = customerRepository.findById(id);
 
@@ -61,7 +59,6 @@ public class CustomerService {
      * @param id last name of the customer to get
      * @return a page of customers or an empty page
      */
-    @Cacheable(value = "customerPageCache", key = "#lastName.concat('-').concat(#pageNumber)")
     public Page<Customer> getCustomersByLastName(final String lastName, final Integer pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber, NUM_OF_USER_PER_PAGE, Sort.by("lastName"));
 
