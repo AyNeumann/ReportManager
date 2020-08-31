@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aymeric.medreport.dto.CustomerDTO;
+import com.aymeric.medreport.dto.CustomerInfoDTO;
 import com.aymeric.medreport.dto.MedReportEntityExceptionDTO;
 import com.aymeric.medreport.model.Customer;
 import com.aymeric.medreport.service.CustomerService;
@@ -93,9 +94,9 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Page.class, message = "Success") 
     })
-    public Page<CustomerDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
+    public Page<CustomerInfoDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
         logger.debug("Getting customer with the last name as: {}", lastName);
-        return customerMapper.customerPageToCustomerDtoPage(customerService.getCustomersByLastName(lastName, pageNumber));
+        return customerMapper.customerPageToCustomerInfoDtoPage(customerService.getCustomersByLastName(lastName, pageNumber));
     }
         
     /**
