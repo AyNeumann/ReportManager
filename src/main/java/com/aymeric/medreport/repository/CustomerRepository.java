@@ -17,10 +17,17 @@ import com.aymeric.medreport.model.Customer;
 public interface CustomerRepository extends JpaRepository<Customer, Long>,  PagingAndSortingRepository<Customer, Long>{
     
     /**
-     * Find all customer with a similar last name and return it in a paged result
+     * Find all customer with a last name that contains the lastName parameter and return it in a paged result
      * @param pageable page parameters
      * @return a page of result
      */
     //@EntityGraph(value = "Customer.reports")
     Page<Customer> findByLastNameContainingIgnoreCase(Pageable pageable, String lastName);
+    
+    /**
+     * Find all customer with a similar last name and return it in a paged result
+     * @param pageable page parameters
+     * @return a page of result
+     */
+    Page<Customer> findByLastNameLikeIgnoreCase(Pageable pageable, String lastName);
 }
