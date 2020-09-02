@@ -33,6 +33,7 @@ public class ReportService {
      */
     public Report createReport(final Report report) {
         logger.debug("Saving the report: {}", report);
+        
         return reportRepository.save(report);
     }
     
@@ -48,7 +49,9 @@ public class ReportService {
             String errMessage = String.format("No report found with the id: %s", id);
             logger.info(errMessage);
             throw new MedReportEntityExceptionDTO(errMessage);
-        } else {
+        }
+        
+        if(logger.isDebugEnabled()) {
             logger.debug("Customer found: {}", report.get());
         }
         
