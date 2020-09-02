@@ -60,7 +60,6 @@ public class CustomerController {
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
-    @Cacheable(value = "customerCache", key = "#id")
     public CustomerDTO create(@RequestBody @Valid CustomerDTO customerDto) {
         logger.debug("Saving the customer: {}", customerDto);
         
@@ -80,6 +79,7 @@ public class CustomerController {
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
+    @Cacheable(value = "customerCache", key = "#id")
     public CustomerDTO getById(@PathVariable final Long id) {
         logger.debug("Getting customer with the id: {}", id);
                
@@ -96,6 +96,7 @@ public class CustomerController {
     @ApiResponses(value = { 
             @ApiResponse(code = 200, response = Page.class, message = "Success") 
     })
+    @Cacheable(value = "customerPageCache", key = "#lastName.concat('-').concat(#pageNumber)")
     public Page<CustomerInfoDTO> getByLastName(@RequestParam(name = "lastName") final String lastName, @RequestParam(name = "pageNumber") final Integer pageNumber){
         logger.debug("Getting customer with the last name as: {}", lastName);
         return customerMapper.customerPageToCustomerInfoDtoPage(customerService.getCustomersByLastName(lastName, pageNumber));
