@@ -11,8 +11,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.NamedAttributeNode;
-import javax.persistence.NamedEntityGraph;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -25,10 +23,6 @@ import javax.validation.constraints.NotNull;
  *
  */
 @Entity
-@NamedEntityGraph(name = "Customer.reports", attributeNodes = {
-        @NamedAttributeNode("reports"),
-        @NamedAttributeNode("address") 
-})
 public class Customer implements Serializable {
     
     /**
@@ -57,7 +51,7 @@ public class Customer implements Serializable {
     private Date dateOfBirth;
     
     /** Customer addresses */
-    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
+    @ManyToMany(fetch=FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH })
     private List<Address> address;
     
     /** Customer reports */

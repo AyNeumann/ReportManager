@@ -39,7 +39,6 @@ public class CustomerService {
      * @param id id of the customer to get
      * @return the found customer or MedReportEntityExceptionDTO
      */
-    @Cacheable(value = "customerCache", key = "#id")
     public Customer getCustomerById(final Long id) {
         Optional<Customer> customer = customerRepository.findById(id);
 
@@ -65,7 +64,7 @@ public class CustomerService {
     public Page<Customer> getCustomersByLastName(final String lastName, final Integer pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber, NUM_OF_CUSTOMER_PER_PAGE, Sort.by("lastName"));
 
-        Page<Customer> customers = customerRepository.findByLastNameContainingIgnoreCase(pageable, lastName);
+        Page<Customer> customers = customerRepository.findByLastNameContainingIgnoreCase(lastName, pageable);
 
         if(customers.isEmpty()) {
             logger.info("No customer with the last name {} found with the id: {}", lastName, pageNumber);

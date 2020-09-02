@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -59,6 +60,7 @@ public class CustomerController {
             @ApiResponse(code = 200, response = Customer.class, message = "Success"),
             @ApiResponse(code = 400, response = MedReportEntityExceptionDTO.class, message = "Bad Request")
     })
+    @Cacheable(value = "customerCache", key = "#id")
     public CustomerDTO create(@RequestBody @Valid CustomerDTO customerDto) {
         logger.debug("Saving the customer: {}", customerDto);
         
