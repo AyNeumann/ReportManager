@@ -166,3 +166,6 @@ UPDATE comment SET id_report = 4 WHERE id = 4;
 ### Swagger URLs:
 - See API endpoints as JSON: http://localhost:8080/v2/api-docs
 - See API endpoints with Swagger UI: http://localhost:8080/swagger-ui/
+***
+## Known bug:
+- **Cannot retrieve a customer using Ehcache**: *Echache does not cache collections by default. Cannot find any working implementation for a second level cache yet.*
