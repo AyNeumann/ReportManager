@@ -2,6 +2,11 @@ package com.aymeric.medreport.dto;
 
 import java.util.Date;
 
+/**
+ * Customer DTO with only id, last name, first name and date of birth
+ * @author Aymeric NEUMANN
+ *
+ */
 public class CustomerInfoDTO {
 
     private Long id;
