@@ -38,6 +38,7 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
     
+    /** Reference to the ReportMapper interface */
     @Autowired
     private ReportMapper reportMapper;
     
