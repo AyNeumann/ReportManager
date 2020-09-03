@@ -9,6 +9,8 @@ This is a simple test project to get started on:
   - Swagger with Springfox library
   - EhCache
   - MapStruct
+  - JUnit
+  - Mockito
 
 ***
 ## JSON sample to create basic data:
@@ -167,5 +169,9 @@ UPDATE comment SET id_report = 4 WHERE id = 4;
 - See API endpoints as JSON: http://localhost:8080/v2/api-docs
 - See API endpoints with Swagger UI: http://localhost:8080/swagger-ui/
 ***
-## Known bug:
+## Known bugs:
 - **Cannot retrieve a customer using Ehcache**: *Echache does not cache collections by default. Cannot find any working implementation for a second level cache yet.*
+***
+## To improve:
+- Add more test
+- Separate unit and integration test
