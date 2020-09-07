@@ -1,5 +1,6 @@
 package com.aymeric.medreport.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -11,8 +12,13 @@ import com.aymeric.medreport.model.Report;
  * @author Aymeric NEUMANN
  *
  */
-public class CustomerDTO {
+public class CustomerDTO implements Serializable {
     
+    /**
+     * Generated Serial Version UID
+     */
+    private static final long serialVersionUID = -424922184856496007L;
+
     private Long id;
     
     private String lastName;

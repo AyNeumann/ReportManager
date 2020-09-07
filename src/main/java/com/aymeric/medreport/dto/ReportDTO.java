@@ -1,5 +1,6 @@
 package com.aymeric.medreport.dto;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -13,8 +14,13 @@ import com.aymeric.medreport.model.Status;
  * @author Aymeric NEUMANN
  *
  */
-public class ReportDTO {
+public class ReportDTO implements Serializable {
     
+    /**
+     * Generated serial version UID
+     */
+    private static final long serialVersionUID = -3393678786740772674L;
+
     private Long id;
 
     private Date creationDate;

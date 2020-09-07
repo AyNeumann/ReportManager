@@ -58,6 +58,12 @@ public class Address implements Serializable {
     @ManyToMany
     private List<Customer> customer;
     
+    @Override
+    public String toString() {
+        return "Address [id=" + id + ", streetNumbers=" + streetNumbers + ", streetName=" + streetName + ", zipCode="
+                + zipCode + ", city=" + city + ", country=" + country + ", details=" + details + "]";
+    }
+
     /**
      * @return the id
      */
